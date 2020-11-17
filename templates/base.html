@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block site_title %}BASE{% endblock %}</title>
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+<div id="navBarId" class="sticky-top collapse-toggle">
+    <ul class="nav justify-content-end navbar-dark bg-dark">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">My Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="/">Contact Me</a>
+        </li>
+    </ul>
+{#        <a class="nav-link" href="/">Eye Catching Cool Animation</a>  <!--TODO rename when done -->#}
+{#        <a class="nav-link" href="/">Small Summary About Me</a>#}
+{#        <a class="nav-link" href="/">Cool thing to show my programing Skills</a>#}
+{#        <a class="nav-link" href="/">Links to Linkedin and how to contact me</a>#}
+
+</div>
+{#<div class="fixed-top">#}
+{#        <div id=header class="row">#}
+{#                <nav>#}
+{#                    #}
+{#                    <a class="nav-link" href="/">Small Summary About Me</a>#}
+{#                    <a class="nav-link" href="/">Cool thing to show my programing Skills</a>#}
+{#                    <a class="nav-link" href="/">Links to Linkedin and how to contact me</a>#}
+{#                </nav>#}
+{##}
+{#        </div>#}
+{#</div>#}
+
+{% block body %}
+{% endblock %}
+
+</body>
+</html>
