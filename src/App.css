@@ -1,0 +1,26 @@
+.App {
+  background-color: #282c34;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(253, 253, 253, 0.57);
+}
+
+.app-link {
+  color: #61dafb;
+}
+
+h1 {
+  color: aquamarine;
+}
+
+/*# sourceMappingURL=App.css.map */
