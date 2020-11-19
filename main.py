@@ -1,6 +1,7 @@
 from flask import Flask, redirect, url_for, request, render_template, flash, jsonify
 
-app = Flask(__name__, template_folder='templates')
+
+app = Flask(__name__, template_folder='./templates', static_folder='./static')
 
 if __name__ == "__main__":
     app.run()
