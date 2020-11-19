@@ -1,2 +1,4 @@
 /env/
 /runserver.bat
+/node_modules/
+/frontend-flask/
