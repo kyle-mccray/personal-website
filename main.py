@@ -1,10 +1,6 @@
-from flask import Flask, redirect, url_for, request, render_template, flash, jsonify
+from flask import Flask, redirect, url_for, request, render_template, flash, jsonify, make_response
 
-
-app = Flask(__name__, template_folder='./templates', static_folder='./static')
-
-if __name__ == "__main__":
-    app.run()
+app = Flask(__name__, template_folder='./templates')
 
 
 @app.before_request
@@ -15,11 +11,11 @@ def before_request():
         return redirect(url, code=code)
 
 
-@app.route('/')
-def index():
-    return render_template('frontPage.html')
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
+    return render_template('index.html')
 
 
-@app.route('/admin')
-def admin():
-    return render_template('base.html')
+if __name__ == "__main__":
+    app.run()
