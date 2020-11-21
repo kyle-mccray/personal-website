@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 
@@ -26,7 +27,7 @@ const webpack = require('webpack');
  */
 
 const TerserPlugin = require('terser-webpack-plugin');
-
+process.env.NODE_ENV = 'development';
 
 
 
@@ -37,8 +38,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'build'), filename:'bundle.js'
   },
-
-  plugins: [new webpack.ProgressPlugin()],
+  devServer: {
+    contentBase: path.join(__dirname, 'templates/index.html'),
+    publicPath: '/',
+    compress: true,
+    hot: true,
+    port: 9000
+  },
+  plugins: [new webpack.ProgressPlugin(),
+    new HtmlWebpackPlugin({
+    inject: true,
+    template: path.resolve('templates/index.html'),
+  }),],
 
   module: {
     rules: [{

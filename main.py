@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, request, render_template, flash, jsonify, make_response
 
-app = Flask(__name__, template_folder='./templates')
+app = Flask(__name__, template_folder='./static/templates')
 
 
 @app.before_request
