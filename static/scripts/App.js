@@ -4,6 +4,7 @@ import MyParticles from "./componets/Particles";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './scss/App.scss'
 import Clock from "./componets/Clock";
+import Footer from "./componets/Footer"
 
 
 function App() {
@@ -11,10 +12,11 @@ function App() {
     <div className="App">
         <NavBar />
         <MyParticles />
-        <div>
-            <h1>ABOUT ME</h1>
-        </div>
-        <Clock />
+        {/*<div className="container-fluid">*/}
+        {/*    <h1>ABOUT ME</h1>*/}
+        {/*</div>*/}
+        {/*<Clock />*/}
+        {/*<Footer />*/}
     </div>
   );
 }

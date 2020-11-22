@@ -25,5 +25,19 @@ $primary-background-color: #282c34;
 
 
 h1{
-  color: aquamarine;
+  color: white;
+}
+
+h2{
+  color: white;
+}
+body{
+  background-color: $primary-background-color;
+}
+
+
+footer{
+  text-align: center;
+  color: black;
+  background-color: white;
 }
