@@ -19,8 +19,7 @@ class Clock extends React.Component{
   render(){
     return (
         <div className="container-fluid">
-          <h1>Hello, World!</h1>
-          <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+          <p>{this.state.date.toLocaleTimeString()}</p>
         </div>
     )
   }

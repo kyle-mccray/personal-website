@@ -33,7 +33,7 @@ process.env.NODE_ENV = 'development';
 
 module.exports = {
   mode: 'development',
-  entry: './scripts/index.js',
+  entry: './scripts/Index.js',
 
   output: {
     path: path.resolve(__dirname, 'build'), filename:'bundle.js'
