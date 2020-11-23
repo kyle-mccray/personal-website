@@ -1,69 +1,74 @@
-$primary-background-color: #282c34;
+//$primary-background-color: #282c34;
+//
 @import "node_modules/bootstrap/scss/bootstrap";
-.Particles{
-  padding-top: 1rem;
-  background-color: purple;
-}
 
-html, body, #root, #App {
+.borderTest{
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+}
+//
+html, body, #root, .App {
   height: 100%;
 }
 
-body{
-  background-color: $primary-background-color;
-}
-
-.bd-footer{
-  @extend
+footer{
+  @extend .borderTest;
   position: absolute;
   bottom: 0;
-  color: white;
-}
+  text-align: center;
 
-//.App{
-//  background-color: $primary-background-color;
-//  height: 100%;
-//}
+}
 //
-//html, body, #root, #App, #App>div {
-//  height: 100%
-//}
-//
-//.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-//  width: 100%;
-//  padding-right: 1rem;
-//  padding-left: 1rem;
-//  margin-right: auto;
-//  margin-left: auto;
-//  padding-top: 1rem;
-//}
-//
-//.navbar-dark .navbar-nav .nav-link {
-//  color: rgba(253, 253, 253, 0.57);
-//  //color: indigo;
-//
-//}
-//
-//.app-link{
-//  color: #61dafb;
-//}
+////body{
+////  background-color: $primary-background-color;
+////}
 //
 //
-//h1{
-//  color: white;
-//}
-//
-//h2{
-//  color: white;
-//}
-//
-//
-//
-//Footer{
-//  justify-content: center;
-//  display: flex;
-//  color: black;
-//  background-color: purple;
-//  position: absolute;
-//  bottom: 0;
-//}
+////.App{
+////  background-color: $primary-background-color;
+////  height: 100%;
+////}
+////
+////html, body, #root, #App, #App>div {
+////  height: 100%
+////}
+////
+////.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+////  width: 100%;
+////  padding-right: 1rem;
+////  padding-left: 1rem;
+////  margin-right: auto;
+////  margin-left: auto;
+////  padding-top: 1rem;
+////}
+////
+////.navbar-dark .navbar-nav .nav-link {
+////  color: rgba(253, 253, 253, 0.57);
+////  //color: indigo;
+////
+////}
+////
+////.app-link{
+////  color: #61dafb;
+////}
+////
+////
+////h1{
+////  color: white;
+////}
+////
+////h2{
+////  color: white;
+////}
+////
+////
+////
+////Footer{
+////  justify-content: center;
+////  display: flex;
+////  color: black;
+////  background-color: purple;
+////  position: absolute;
+////  bottom: 0;
+////}
