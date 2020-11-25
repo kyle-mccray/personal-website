@@ -2,7 +2,6 @@ import React from 'react'
 import NavBar from "./componets/Navbar";
 import MyParticles from "./componets/Particles";
 import './scss/App.scss'
-import Clock from "./componets/Clock";
 import Footer from "./componets/Footer"
 
 
@@ -11,12 +10,14 @@ function App() {
   return (
     <div className="App">
         <NavBar />
-        <main>
+        <main className="MainContent">
+            <MyParticles />
             <Home />
-            <AboutMe />
-            <Skills />
+            {/*<AboutMe />*/}
+            {/*<Skills />*/}
+            {/*<Contact />*/}
         </main>
-        <Footer />
+        {/*<Footer />*/}
     </div>
   );
 }
@@ -24,8 +25,8 @@ function App() {
 class Home extends React.Component{
     render() {
         return(
-            <div className="container">
-                <h1>Welcome to My Site</h1>
+            <div>
+                <h1 className="MyCenteredTextH1">Welcome!</h1>
             </div>
         )
     }
@@ -34,7 +35,7 @@ class Home extends React.Component{
 class AboutMe extends React.Component{
     render() {
         return(
-            <div className="container">
+            <div className="container" id="About">
                 <h1>About Me</h1>
                 <p>
                     Hi my name is Kyle McCray. I am an aspiring software developer looking to improve my coding skills.
@@ -55,11 +56,21 @@ class AboutMe extends React.Component{
 class Skills extends React.Component{
     render() {
         return(
-            <div className="container">
+            <div className="container" id="skills">
                 <h1>My Skills</h1>
                 <p>
                     PYTHON, JAVA, DEVOPS, PROBLEM SOLVING
                 </p>
+            </div>
+        )
+    }
+}
+
+class Contact extends React.Component{
+    render() {
+        return(
+            <div className="container" id="contact">
+                <h1>CONTACT AREA</h1>
             </div>
         )
     }

@@ -1,26 +1,28 @@
 import React from "react";
-import {Row, Container, Nav, Navbar, Col} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import Clock from "./Clock";
 class NavBar extends React.Component{
     render() {
         return (
             <header>
-                        <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark"
-                                className="container-fluid"
+                        <Navbar sticky="top" collapseOnSelect expand="lg"
+                                className="container-fluid" id="MainNavBar"
                         >
                             <Navbar.Brand href="/">Kyle McCray</Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-auto"/>
                                 <Nav className="justify-content-end" >
-                                    <Nav.Link eventKey={1} href="#home">Home</Nav.Link>
-                                    <Nav.Link eventKey={2} href="#about">
+                                    <Nav.Link href="#home">
+                                        Home
+                                    </Nav.Link>
+                                    <Nav.Link href="#about">
                                         About Me
                                     </Nav.Link>
-                                    <Nav.Link eventKey={3} href="#skills">
+                                    <Nav.Link href="#skills">
                                         My Skills
                                     </Nav.Link>
-                                    <Nav.Link eventKey={4} href="#contact">
+                                    <Nav.Link href="#contact">
                                         Contact Me
                                     </Nav.Link>
                                 </Nav>
