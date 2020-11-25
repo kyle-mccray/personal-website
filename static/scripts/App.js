@@ -17,7 +17,7 @@ function App() {
             {/*<Skills />*/}
             {/*<Contact />*/}
         </main>
-        {/*<Footer />*/}
+        <Footer />
     </div>
   );
 }
@@ -26,7 +26,7 @@ class Home extends React.Component{
     render() {
         return(
             <div>
-                <h1 className="MyCenteredTextH1">Welcome!</h1>
+                <h1 className="MyCenteredTextH1">Welcome</h1>
             </div>
         )
     }

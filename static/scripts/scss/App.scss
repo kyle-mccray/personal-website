@@ -11,15 +11,18 @@ html, body, #root, .App {
 }
 
 footer{
-  position: relative;
+  position: fixed;
   bottom: 0;
-  flex-shrink: 0;
-  text-align: center;
-  padding-top: 3rem;
-  margin-top: auto;
+
 
 }
-
+a, a:link, a:visited {
+  color:white;
+  text-decoration: none;
+}
+a:hover{
+  color: #00ffab;
+}
 //ID's
 
 
@@ -38,7 +41,7 @@ footer{
 }
 
 .container{
-  @extend .borderTest;
+
 }
 
 .MyCenteredTextH1{
@@ -51,6 +54,11 @@ footer{
   padding: .5rem;
   transform: translate(-50%, -50%)
 }
+
+
+
+
+
 
 
 

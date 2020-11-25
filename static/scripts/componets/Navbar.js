@@ -22,9 +22,6 @@ class NavBar extends React.Component{
                                     <Nav.Link href="#skills">
                                         My Skills
                                     </Nav.Link>
-                                    <Nav.Link href="#contact">
-                                        Contact Me
-                                    </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Navbar>
