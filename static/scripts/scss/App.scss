@@ -13,9 +13,8 @@ html, body, #root, .App {
 footer{
   position: fixed;
   bottom: 0;
-
-
 }
+
 a, a:link, a:visited {
   color:white;
   text-decoration: none;
@@ -30,6 +29,8 @@ a:hover{
   @extend .navbar-dark;
   background-color: #1a1e22;
   color: white;
+  position: fixed;
+  width: 100vw;
 
 }
 

@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, request, render_template, flash, jsonify, make_response
+from flask import Flask, redirect, request, render_template
 
 app = Flask(__name__, template_folder='./static/templates')
 

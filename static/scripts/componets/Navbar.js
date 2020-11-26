@@ -7,6 +7,7 @@ class NavBar extends React.Component{
             <header>
                         <Navbar sticky="top" collapseOnSelect expand="lg"
                                 className="container-fluid" id="MainNavBar"
+
                         >
                             <Navbar.Brand href="/">Kyle McCray</Navbar.Brand>
                             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

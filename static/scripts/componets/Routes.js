@@ -6,7 +6,7 @@ import Skills from './Skills';
 import NotFound from "./NotFound";
 
 
-const Main = () => {
+const Routes = () => {
     return (
         <Switch> {/* The Switch decides which component to show based on the current URL.*/}
             <Route exact path='/' component={Home} />
@@ -17,4 +17,4 @@ const Main = () => {
     );
 }
 
-export default Main;
+export default Routes;
