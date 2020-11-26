@@ -1,6 +1,6 @@
 import React from "react";
 import {Nav, Navbar} from "react-bootstrap";
-import Clock from "./Clock";
+import {Link} from "react-router-dom";
 class NavBar extends React.Component{
     render() {
         return (
@@ -13,14 +13,14 @@ class NavBar extends React.Component{
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-auto"/>
                                 <Nav className="justify-content-end" >
-                                    <Nav.Link href="#home">
+                                    <Nav.Link as={Link} to="/">
                                         Home
                                     </Nav.Link>
-                                    <Nav.Link href="#about">
-                                        About Me
+                                    <Nav.Link as={Link} to="/about">
+                                        About
                                     </Nav.Link>
-                                    <Nav.Link href="#skills">
-                                        My Skills
+                                    <Nav.Link as={Link} to="/skills">
+                                        Skills
                                     </Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>

@@ -1,22 +1,15 @@
+import './scss/App.scss'
 import React from 'react'
 import NavBar from "./componets/Navbar";
-import MyParticles from "./componets/Particles";
-import './scss/App.scss'
 import Footer from "./componets/Footer"
-
+import Main from "./componets/Main";
 
 
 function App() {
   return (
     <div className="App">
         <NavBar />
-        <main className="MainContent">
-            <MyParticles />
-            <Home />
-            {/*<AboutMe />*/}
-            {/*<Skills />*/}
-            {/*<Contact />*/}
-        </main>
+        <Main />
         <Footer />
     </div>
   );
