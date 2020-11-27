@@ -256,7 +256,7 @@ class MyParticles extends React.Component {
                                            "value": "#80edf9",
                                            "animation": {
                                                "enable": true,
-                                               "speed": 21,
+                                               "speed": 16, //color changing speed
                                                "sync": false
                                            }
                                        },
@@ -338,7 +338,7 @@ class MyParticles extends React.Component {
                                            },
                                            "random": false,
                                            "size": false,
-                                           "speed": 2,
+                                           "speed": 1.5, //Main Speed Control
                                            "straight": false,
                                            "trail": {
                                                "enable": false,
