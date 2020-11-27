@@ -14,7 +14,7 @@ class NavBar extends React.Component{
                             <Navbar.Collapse id="responsive-navbar-nav">
                                 <Nav className="mr-auto"/>
                                 <Nav className="justify-content-end" >
-                                    <Nav.Link as={Link} to="/">
+                                    <Nav.Link as={Link} to="/" >
                                         Home
                                     </Nav.Link>
                                     <Nav.Link as={Link} to="/about">
