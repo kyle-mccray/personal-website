@@ -9,8 +9,7 @@ class Skills extends React.Component{
     render() {
         return(
             <div>
-                <MyParticles />
-                <h1 className="MyCenteredTextH1">Skills Page</h1>
+                <h1 className="CenteredJumbo">Skills Page</h1>
             </div>
         )}
 }

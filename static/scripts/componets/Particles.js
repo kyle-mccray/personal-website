@@ -243,7 +243,7 @@ class MyParticles extends React.Component {
                                                },
                                                "vertical": {
                                                    "random": {
-                                                       "enable": false,
+                                                       "enable": true,
                                                        "minimumValue": 0.1
                                                    },
                                                    "value": 1
@@ -256,7 +256,7 @@ class MyParticles extends React.Component {
                                            "value": "#80edf9",
                                            "animation": {
                                                "enable": true,
-                                               "speed": 16, //color changing speed
+                                               "speed": 12, //color changing speed
                                                "sync": false
                                            }
                                        },
@@ -285,7 +285,7 @@ class MyParticles extends React.Component {
                                                "value": "random"
                                            },
                                            "consent": false,
-                                           "distance": 100,
+                                           "distance": 125,
                                            "enable": true,
                                            "frequency": 1,
                                            "opacity": 1,
@@ -298,7 +298,7 @@ class MyParticles extends React.Component {
                                            },
                                            "triangles": {
                                                "enable": false,
-                                               "frequency": 1
+                                               "frequency": .5
                                            },
                                            "width": 1,
                                            "warp": false
@@ -344,7 +344,7 @@ class MyParticles extends React.Component {
                                                "enable": false,
                                                "length": 10,
                                                "fillColor": {
-                                                   "value": "#000000"
+                                                   "value": "#fff"
                                                }
                                            },
                                            "vibrate": false,
@@ -361,22 +361,22 @@ class MyParticles extends React.Component {
                                        },
                                        "opacity": {
                                            "random": {
-                                               "enable": true,
+                                               "enable": false,
                                                "minimumValue": 0.3
                                            },
-                                           "value": 0.62,
+                                           "value": .6,
                                            "animation": {
                                                "enable": false,
                                                "minimumValue": 0,
                                                "speed": 0.5,
-                                               "sync": true
+                                               "sync": false
                                            }
                                        },
                                        "reduceDuplicates": false,
                                        "rotate": {
                                            "random": {
-                                               "enable": false,
-                                               "minimumValue": 0
+                                               "enable": true,
+                                               "minimumValue": 1
                                            },
                                            "value": 3,
                                            "animation": {
@@ -404,7 +404,7 @@ class MyParticles extends React.Component {
                                        },
                                        "size": {
                                            "random": {
-                                               "enable": true,
+                                               "enable": false,
                                                "minimumValue": 1
                                            },
                                            "value": 3,

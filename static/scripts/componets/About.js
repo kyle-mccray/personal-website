@@ -1,5 +1,6 @@
 import React from 'react';
 import MyParticles from "./Particles";
+import {Col, Container, Row} from "react-bootstrap";
 
 class About extends React.Component{
     componentDidMount() {
@@ -9,8 +10,7 @@ class About extends React.Component{
     render() {
         return(
             <div>
-                <MyParticles />
-                <h1 className="MyCenteredTextH1">About Me Page</h1>
+
             </div>
     )}
 }

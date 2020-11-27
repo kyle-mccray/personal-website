@@ -6,7 +6,7 @@ class NotFound extends React.Component{
         return(
             <div>
                 <MyParticles />
-                <h1 className="MyCenteredTextH1">404</h1>
+                <h1 className="CenteredJumbo">404</h1>
             </div>
         )
     }
